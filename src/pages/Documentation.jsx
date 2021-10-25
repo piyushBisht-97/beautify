@@ -29,7 +29,7 @@ const Documentation = () => {
 
         <div style={{ padding: "0rem" }} className="codeBox">
           <iframe
-            src="https://carbon.now.sh/embed/F2ZngG8Kjrcwphl2TAHL"
+            src="https://carbon.now.sh/embed/F2ZngG8Kjrcwphl2TAHL" title="navbar"
             style={{
               width: "44rem",
               // height: "129px",
@@ -165,7 +165,7 @@ const Documentation = () => {
           </div>
          
           <iframe
-            src="https://carbon.now.sh/embed/RJsfL0pmQzZzd5Vcpoil"
+            src="https://carbon.now.sh/embed/RJsfL0pmQzZzd5Vcpoil" title="copy-link"
             style={{
               marginLeft: "1rem",
               marginBottom: "-5rem",
