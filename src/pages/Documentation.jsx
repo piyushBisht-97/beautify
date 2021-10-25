@@ -11,9 +11,9 @@ const Documentation = () => {
 
 <div>
    <ul className="nav-links">
-  <li><a>HOME</a></li>
-  <li><a>DOCS</a></li>
-  <li><a><i className="fab fa-github"></i></a></li>
+  <li><a href="/page">HOME</a></li>
+  <li><a href="/page">DOCS</a></li>
+  <li><a href="/page"><i className="fab fa-github"></i></a></li>
   
   </ul>
   </div>
@@ -52,10 +52,10 @@ const Documentation = () => {
   <h2>Beauti-fy</h2>
 
   <ul className="nav-links">
-    <li><a>HOME</a></li>
-    <li><a>PRODUCTS</a></li>
-    <li><a>ABOUT</a></li>
-    <li><a>LOGIN</a></li>
+    <li><a href="/page">HOME</a></li>
+    <li><a href="/page">PRODUCTS</a></li>
+    <li><a href="/page">ABOUT</a></li>
+    <li><a href="/page">LOGIN</a></li>
   </ul>
   <input className="search" placeholder="Search"/>
 
@@ -70,10 +70,10 @@ const Documentation = () => {
   <h2>Beauti-fy</h2>
 
   <ul className="nav-links">
-    <li><a>HOME</a></li>
-    <li><a>PRODUCTS</a></li>
-    <li><a>ABOUT</a></li>
-    <li><a>LOGIn</a></li>
+    <li><a href="Home">HOME</a></li>
+    <li><a href="Products">PRODUCTS</a></li>
+    <li><a href="About">ABOUT</a></li>
+    <li><a href="Login">LOGIn</a></li>
   </ul>
   <input className="search" placeholder="Search"/>
 
