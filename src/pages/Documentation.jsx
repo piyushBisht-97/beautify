@@ -142,6 +142,43 @@ const Documentation = () => {
 </div>
 <hr/>
 
+<div className="component-details" id="alerts">
+          <h2>Alerts</h2>
+          <div class="alert alert-error">
+            
+            <p> There seems to be an error</p>
+          </div>
+         
+          <div class="alert alert-success">
+           
+            <p> Everything seems to be working great</p>
+          </div>
+         
+          <div class="alert alert-warning">
+            
+            <p> Warning! Check your code</p>
+          </div>
+         
+          <div class="alert alert-info">
+            
+            <p> FYI! Just informing you</p>
+          </div>
+         
+          <iframe
+            src="https://carbon.now.sh/embed/RJsfL0pmQzZzd5Vcpoil"
+            style={{
+              marginLeft: "1rem",
+              marginBottom: "-5rem",
+              width: "40rem",
+              height: "40rem",
+              border: "0",
+              transform: "scale(1)",
+              overflow: "hidden"
+            }}
+            sandbox="allow-scripts allow-same-origin"
+          ></iframe>
+        </div>
+
 
        </main>
         <div className="sidebar">
