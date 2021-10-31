@@ -6,7 +6,10 @@
 .navbar{
   display: flex;
   align-items: center;
+  z-index: 100;
   padding: 1rem;
+  position: sticky;
+    top: 0;
   justify-content: space-around;
   
 }
@@ -318,3 +321,53 @@ border: 1px solid red;
   color: #0c5460;
 }
 /* ends herer */
+
+/* Avatar */
+.avatar {
+  display: inline;
+  margin: 0 1rem;
+}
+
+.avatar-image,
+.avatar-border-image {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.avatar-border {
+  border: 10px solid orangered;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.avatar-border-image {
+  height: 80%;
+}
+/* end here */
+
+/* badge on card */
+.badge-container{
+  position: relative;
+  width: 30%;
+}
+.card-detail{
+  display: flex;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 1rem;
+  flex-direction: column;
+}
+.text{
+  
+  position: relative;
+}
+.badge{
+  position: absolute;
+  background-color: brown;
+  padding: .2rem;
+  border-radius: 1rem;
+  right: 0;
+}
+
+/* ends Here */
