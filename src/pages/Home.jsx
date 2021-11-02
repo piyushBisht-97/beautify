@@ -1,24 +1,30 @@
 import React from 'react'
-import Navbar from './Navbar'
-import {Link} from "react-router-dom"
-
+import {Link } from "react-router-dom"
+import './documentation.css'
+import "./home.css"
 
 const Home = () => {
     return (
-        <div>
-            <Navbar/>
-            <div className="container">
-            <div className="Home">
-            <i class="fas fa-spray-can"></i>
-             <h2 className="main-heading"> Welcome to Beautify UI</h2>
-             <h3 className="sub-heading"> Let's build a beautiful website together so that you show your work to your peers. </h3>
-              
-             <Link to="/docs" className="btn-main">Get Started</Link>
+        <div className="cover">
+        <div className="navbar">
+        <img src="https://cdn5.f-cdn.com/contestentries/1865716/49856982/5fe10e434f37f_thumb900.jpg" width="150px" alt="logo"/>
+            <div >
+             <ul className="nav-links">
+                 <li><Link to="/">Home</Link></li>
+                 <li><Link to="/docs">Docs</Link></li>
+                 <li><Link to="/about">About</Link></li>
+             </ul>
+
             </div>
-            </div>
-            <p className="tag-line">
-          Made with <i class="fas fa-heart"></i> by Piyush Bisht
-        </p>
+            
+        <a href="/page"><i className="fab fa-github fa-2x" ></i></a>
+            
+        </div>
+        <div className="headings">
+            <h1>Beauti-fy UI</h1>
+            <p>A component library to make your web-application come to life..</p>
+            <Link to="/docs" className="btn-main" >Getting Started</Link>
+        </div>
         </div>
     )
 }

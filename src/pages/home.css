@@ -1,0 +1,32 @@
+.cover{
+    background: linear-gradient(120deg, #ffffff 60%, rgb(238, 18, 139));
+    width: 100%;
+    height: 100vh;
+}
+
+.headings{
+    margin-top: 5rem;
+}
+.headings h1 {
+    margin-bottom: 3rem;
+    font-size: 80px;
+}
+
+.headings p{
+    margin-bottom: 3rem;
+    font-size: 25px;
+}
+.headings .btn-main{
+    padding: 1.5rem;
+    font-size: 18px;
+    border: 1px solid #f70ed8;
+    border-radius: 1rem;
+    
+    text-decoration: none;
+    
+}
+.headings .btn-main:hover{
+    cursor: pointer;
+    background-color: rgb(238, 18, 139) ;
+    color: white;
+}

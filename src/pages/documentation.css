@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
   }
+  iframe{
+    margin: 3rem 3rem;
+  }
   .container{
     display: grid;
   height: 100vh;
@@ -14,23 +17,78 @@
   grid-template-areas: "nav nav nav nav"
                         "sidebar main main main"
                         "sidebar main main main "
-                        "footer footer footer footer";
+                        "sidebar footer footer footer";
                         grid-gap: 1rem;
                         text-transform: uppercase;
+  }
+  .navbar{
+    display: flex;
+    align-items: center;
+    
+    position: sticky;
+      top: 0;
+    justify-content: space-between;
+    
+  }
+  .nav-component >h2{
+  margin: 2rem 0;
+  }
+  .navbar img{
+    margin-left: 1.5rem;
+  }
+  .navbar a{
+    margin-right: 2rem;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    margin: 0 2rem;
+    list-style: none;
+    
+  }
+  .nav-links li a{
+    
+    text-decoration: none;
   }
   .navbar{
     
     grid-area: nav;
   
   }
+  btn .btn-component{
+    margin: 1rem;
+  }
+.floating_btn{
+  margin: 2rem;
+}
+.cards{
+  margin: 2.5rem;
+}
+
+.component-details > h2{
+  margin: 2rem;
+}
+
+.badge-container >h2{
+  margin: 2rem;
+}
   .main{
    
     grid-area: main;
   }
+.main h1{
+  margin-bottom: 2rem;
+}
+.main p{
+  margin-bottom: 2rem;
+}
+
   .sidebar{
     
     grid-area: sidebar;
-    border-right: 1px solid gray;
+    border-right: 2px solid gray;
+  
+    cursor: pointer;
     
   }
   footer{
@@ -42,6 +100,6 @@
     .container{
       grid-template-columns: 1fr;
       grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr ;
-      grid-template-areas: "nav" "sidebar" "main" "content1" "content2" "content3" "footer";
+      grid-template-areas: "nav" "sidebar" "main" "main" "main" "main" "footer";
     }
   }

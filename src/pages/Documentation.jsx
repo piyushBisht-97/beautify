@@ -1,27 +1,28 @@
 import React from 'react'
-import { Link} from 'react-router-dom'
+import { Link as Linkr} from 'react-router-dom'
+import {Link} from 'react-scroll'
 import './component.css'
 import './documentation.css'
 const Documentation = () => {
     return (
       <div className="container">
-       <nav className="navbar">
+        <div className="navbar" >
+        <img src="https://cdn5.f-cdn.com/contestentries/1865716/49856982/5fe10e434f37f_thumb900.jpg" width="150px" alt="logo"/>
+            <div >
+             <ul className="nav-links">
+                 <li><Linkr to="/">Home</Linkr></li>
+                 <li><Linkr to="/docs">Docs</Linkr></li>
+                 <li><Linkr to="/about">About</Linkr></li>
+             </ul>
 
- <h1>Beauti-fy</h1>
-
-<div>
-   <ul className="nav-links">
-  <li><a href="/page">HOME</a></li>
-  <li><a href="/page">DOCS</a></li>
-  <li><a href="/page"><i className="fab fa-github"></i></a></li>
-  
-  </ul>
-  </div>
-
-       </nav>
+            </div>
+            
+        <a href="/page"><i className="fab fa-github fa-2x" ></i></a>
+            
+        </div>
        <main className="main">
        <div>
-         <h2>Installation</h2>
+         <h1>Installation</h1>
          <p>
           Copy the following code in the head tag of your HTML document and you
           are good to go:
@@ -45,17 +46,17 @@ const Documentation = () => {
        <hr />
 
        {/* navbar */}
-       <div className="nav-component">
-         <h2>NavBars</h2>
+       <div className="nav-component" id="nav-component">
+         <h2>Nav-Bars</h2>
        <nav className="items">
 
   <h2>Beauti-fy</h2>
 
   <ul className="nav-links">
-    <li><a href="/page">HOME</a></li>
-    <li><a href="/page">PRODUCTS</a></li>
-    <li><a href="/page">ABOUT</a></li>
-    <li><a href="/page">LOGIN</a></li>
+    <li><a href="/docs">HOME</a></li>
+    <li><a href="/docs">PRODUCTS</a></li>
+    <li><a href="/docs">ABOUT</a></li>
+    <li><a href="/docs">LOGIN</a></li>
   </ul>
   <input className="search" placeholder="Search"/>
 
@@ -84,7 +85,11 @@ const Documentation = () => {
   sandbox="allow-scripts allow-same-origin">
 </iframe>
        </div>
+
+
        <hr/>
+
+
 <div className="btn btn-component">
   <h2>BUTTONS</h2>
 <button  className="btn btn-primary">Primary</button>
@@ -125,7 +130,7 @@ const Documentation = () => {
 
 </div>
 <hr/>
-<div className="cards">
+<div className="cards" id="card">
 <h2>Cards</h2>
 <main className="grid">
   
@@ -166,22 +171,22 @@ const Documentation = () => {
 
 <div className="component-details" id="alerts">
           <h2>Alerts</h2>
-          <div class="alert alert-error">
+          <div className="alert alert-error">
             
             <p> There seems to be an error</p>
           </div>
          
-          <div class="alert alert-success">
+          <div className="alert alert-success">
            
             <p> Everything seems to be working great</p>
           </div>
          
-          <div class="alert alert-warning">
+          <div className="alert alert-warning">
             
             <p> Warning! Check your code</p>
           </div>
          
-          <div class="alert alert-info">
+          <div className="alert alert-info">
             
             <p> FYI! Just informing you</p>
           </div>
@@ -192,9 +197,14 @@ const Documentation = () => {
   sandbox="allow-scripts allow-same-origin">
 </iframe> 
         </div>
+
+
         <hr/>
+
+
+
         <div className="component-details" id="avatar">
-          <h1>Avatar</h1>
+          <h2>Avatar</h2>
 
           <div>
             <div>
@@ -237,7 +247,7 @@ const Documentation = () => {
     <div className="text">
       <h3>Apple Iphone13</h3>
       <p>Rs 1,00,000</p>
-      <button>Cart</button>
+      <button>Add to Cart</button>
       
     </div>
     <span className="badge">Coming Soon</span>
@@ -255,7 +265,8 @@ const Documentation = () => {
        </main>
         <div className="sidebar">
         <Link
-            to="navbar"
+           activeClass="activeClass"
+            to="nav-component"
             spy={true}
             smooth={true}
             className="button-nav navbar-btn"
@@ -263,6 +274,7 @@ const Documentation = () => {
             NavBar
           </Link>
           <Link
+          activeClass="activeClass"
             to="card"
             spy={true}
             smooth={true}
@@ -271,20 +283,23 @@ const Documentation = () => {
             Cards{" "}
           </Link>
           <Link
-            to="button"
+            to="btn"
+            activeClass="activeClass"
             spy={true}
             smooth={true}
+            duration={1000}
             className="button-nav buttons-btn"
           >
             Buttons
           </Link>
           <Link
-            to="floating-btn"
+            to="floating_btn"
+            activeClass="activeClass"
             spy={true}
             smooth={true}
             className="button-nav floating-button"
           >
-            Outline Buttons
+            Floating Buttons
           </Link>
           <Link
             to="alerts"
@@ -295,7 +310,8 @@ const Documentation = () => {
             Alerts
           </Link>
           <Link
-            to="badge-card"
+            to="card-detail"
+            activeClass="activeClass"
             spy={true}
             smooth={true}
             className="button-nav card-badge-btn"
@@ -304,6 +320,7 @@ const Documentation = () => {
           </Link>
           <Link
             to="avatar"
+            activeClass="activeClass"
             spy={true}
             smooth={true}
             className="button-nav avatar-btn"

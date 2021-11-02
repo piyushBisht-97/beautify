@@ -3,29 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-.navbar{
-  display: flex;
-  align-items: center;
-  z-index: 100;
-  padding: 1rem;
-  position: sticky;
-    top: 0;
-  justify-content: space-around;
-  
-}
-.nav-links {
-  list-style: none;
-  
-}
-.nav-links li {
-  display: inline-block;
-  margin: 0 2rem;
-}
 
-.nav-links li a:hover{
-  cursor: pointer;
-color: darkturquoise;
-}
 .sidebar{
   display: flex;
   flex-direction: column;
@@ -39,10 +17,12 @@ color: darkturquoise;
   line-height: 60px;
 }
 .button-nav:hover{
-  background: grey;
+  background: rgb(230, 8, 130);
   color: white;
 }
-
+.nav-component{
+ margin: 3rem;
+}
 .nav-component .items{
   display: flex;
   justify-content: space-between;
@@ -63,9 +43,9 @@ color: darkturquoise;
 /* BUttons */
 .btn{
   padding: 0.7rem 1rem;
-  margin: 1rem;
+  margin: 2rem;
   cursor: pointer;
-  color: aliceblue;
+  color: black;
   border-radius: 4px;
 }
 .btn-primary{
@@ -282,18 +262,19 @@ border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 .alert {
   width: 50%;
   border: 1px solid black;
   padding: 0.75rem 1.25rem;
-    margin-bottom: 1rem;
+    margin: 2rem;
   
   letter-spacing: 5px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  
 }
 
 
@@ -325,7 +306,7 @@ border: 1px solid red;
 /* Avatar */
 .avatar {
   display: inline;
-  margin: 0 1rem;
+  margin: 2rem;
 }
 
 .avatar-image,
@@ -347,13 +328,15 @@ border: 1px solid red;
 /* end here */
 
 /* badge on card */
-.badge-container{
+.badge-container{ 
   position: relative;
+  margin: 2rem 2rem;
   width: 30%;
 }
 .card-detail{
   display: flex;
   border: 1px solid black;
+  
   padding: 1rem;
   border-radius: 1rem;
   flex-direction: column;
@@ -364,7 +347,9 @@ border: 1px solid red;
 }
 .badge{
   position: absolute;
-  background-color: brown;
+  
+  color: whitesmoke;
+  background-color: salmon;
   padding: .2rem;
   border-radius: 1rem;
   right: 0;
