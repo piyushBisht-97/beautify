@@ -29,17 +29,11 @@ const Documentation = () => {
         </p>
 
         <div style={{ padding: "0rem" }} className="codeBox">
-          <iframe
-            src="https://carbon.now.sh/embed/F2ZngG8Kjrcwphl2TAHL" title="navbar"
-            style={{
-              width: "44rem",
-              // height: "129px",
-              border: "0",
-              transform: "scale(1)",
-              overflow: "hidden"
-            }}
-            sandbox="allow-scripts allow-same-origin"
-          ></iframe>
+        <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28248%2C5%2C155%2C1%29&t=solarized+light&wt=none&l=auto&ds=false&dsyoff=35px&dsblur=62px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=149%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fbrave-nightingale-2d2250.netlify.app%252F%252Fstyle.css%2522%2520%252F%253E"
+  style={{width: "866px", height: "206px", border:"0", transform: "scale(1)", overflow:"hidden"}} title="code-snippet"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
         </div>
  </div>
        
