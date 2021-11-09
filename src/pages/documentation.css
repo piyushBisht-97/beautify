@@ -24,8 +24,10 @@
   .navbar{
     display: flex;
     align-items: center;
-    
+    flex-wrap: wrap;
     position: sticky;
+    z-index: 1;
+    background-color: white;
       top: 0;
     justify-content: space-between;
     
@@ -87,6 +89,7 @@
     
     grid-area: sidebar;
     border-right: 2px solid gray;
+    
   
     cursor: pointer;
     
@@ -94,6 +97,8 @@
   footer{
     
     grid-area: footer;
+    position: fixed;
+    bottom: 0;
   }
 
   @media only screen and (max-width:550px){
