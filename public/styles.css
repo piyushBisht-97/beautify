@@ -35,8 +35,9 @@
 
 .nav-links li a{
   display: flex;
-  justify-content: space-between;
-  
+  justify-content: space-around;
+  text-decoration: none;
+  list-style: none;
 }
 .items input{
   border-radius: 1rem;
