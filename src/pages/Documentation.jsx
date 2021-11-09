@@ -49,7 +49,7 @@ const Documentation = () => {
   <ul className="nav-links">
     <li><a href="/docs">HOME</a></li>
     <li><a href="/docs">PRODUCTS</a></li>
-    <li><a href="/docs">ABOUT</a></li>
+   
     <li><a href="/docs">LOGIN</a></li>
   </ul>
   <input className="search" placeholder="Search"/>
@@ -67,7 +67,7 @@ const Documentation = () => {
   <ul className="nav-links">
     <li><a href="Home">HOME</a></li>
     <li><a href="Products">PRODUCTS</a></li>
-    <li><a href="About">ABOUT</a></li>
+   
     <li><a href="Login">LOGIn</a></li>
   </ul>
   <input className="search" placeholder="Search"/>
@@ -325,7 +325,7 @@ const Documentation = () => {
         </div>
         
         
-        <footer>Footer</footer>
+        <footer className="footer">Made with ❤️ by Piyush Bisht</footer>
 
       </div>
     )

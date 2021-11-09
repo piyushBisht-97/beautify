@@ -13,43 +13,51 @@
     display: grid;
   height: 100vh;
   grid-template-columns: 0.8fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  grid-template-rows: auto auto auto auto;
+  /* grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr; */
   grid-template-areas: "nav nav nav nav"
                         "sidebar main main main"
                         "sidebar main main main "
                         "sidebar footer footer footer";
                         grid-gap: 1rem;
                         text-transform: uppercase;
+                        
   }
   .navbar{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    position: sticky;
+    
+    
     z-index: 1;
     background-color: white;
+    position: fixed;
       top: 0;
+      width: 100%;
     justify-content: space-between;
-    
+   
   }
   .nav-component >h2{
   margin: 2rem 0;
   }
   .navbar img{
     margin-left: 1.5rem;
+    position: relative;
   }
   .navbar a{
     margin-right: 2rem;
   }
   
   .nav-links li {
+    position: relative;
     display: inline-block;
+    
     margin: 0 2rem;
     list-style: none;
+    flex-wrap: wrap;
     
   }
   .nav-links li a{
-    
+    position: relative;
     text-decoration: none;
   }
   .navbar{
@@ -57,7 +65,7 @@
     grid-area: nav;
   
   }
-  btn .btn-component{
+  .btn .btn-component{
     margin: 1rem;
   }
 .floating_btn{
@@ -77,6 +85,9 @@
   .main{
    
     grid-area: main;
+    margin-top: 6.5rem;
+    
+    
   }
 .main h1{
   margin-bottom: 2rem;
@@ -88,17 +99,25 @@
   .sidebar{
     
     grid-area: sidebar;
-    border-right: 2px solid gray;
+    margin-top: 6.5rem;
     
+    
+    border-right: 2px solid gray;
+    /* background-color: brown; */
   
     cursor: pointer;
     
   }
+  .sidebar Link{
+    position: relative;
+  }
   footer{
     
     grid-area: footer;
-    position: fixed;
-    bottom: 0;
+   
+    padding: 1rem;
+
+    
   }
 
   @media only screen and (max-width:550px){

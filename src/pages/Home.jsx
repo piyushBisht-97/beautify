@@ -17,13 +17,16 @@ const Home = () => {
 
             </div>
             
-        <a href="/page"><i className="fab fa-github fa-2x" ></i></a>
+        <a href="https://github.com/piyushBisht-97"><i className="fab fa-github fa-2x" ></i></a>
             
         </div>
         <div className="headings">
+            <div className="heading">
             <h1>Beauti-fy UI</h1>
             <p>A component library to make your web-application come to life..</p>
             <Link to="/docs" className="btn-main" >Getting Started</Link>
+            </div>
+            
         </div>
         </div>
     )

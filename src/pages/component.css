@@ -29,6 +29,7 @@
   padding: 1rem;
   border-radius: 1rem;
   border: 1px solid black;
+  align-items: center;
 }
 
 .nav-links li{
@@ -37,6 +38,7 @@
 }
 .items input{
   border-radius: 1rem;
+  padding: 10px;
   width: 30%;
 }
 
