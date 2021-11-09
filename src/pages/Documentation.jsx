@@ -40,7 +40,9 @@ const Documentation = () => {
        <hr />
 
        {/* navbar */}
-       <div className="nav-component" id="nav-component">
+
+
+       <div className="nav-component white" >
          <h2>Nav-Bars</h2>
        <nav className="items">
 
@@ -49,16 +51,13 @@ const Documentation = () => {
   <ul className="nav-links">
     <li><a href="/docs">HOME</a></li>
     <li><a href="/docs">PRODUCTS</a></li>
-   
     <li><a href="/docs">LOGIN</a></li>
   </ul>
   <input className="search" placeholder="Search"/>
+  </nav>
+  </div>
 
-       </nav>
-
-       </div>
-
-       <div className="nav-component">
+       <div className="nav-component black">
          
        <nav className="items">
 
@@ -73,15 +72,13 @@ const Documentation = () => {
   <input className="search" placeholder="Search"/>
 
        </nav>
-       <iframe
+      </div>
+
+      <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28248%2C5%2C155%2C1%29&t=solarized+light&wt=none&l=auto&ds=false&dsyoff=35px&dsblur=62px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=149%25&si=false&es=2x&wm=false&code=%253Cdiv%2520className%253D%2522nav-component%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253ENavBars%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cnav%2520className%253D%2522items%2522%253E%250A%250A%2520%2520%253Ch2%253EBeauti-fy%253C%252Fh2%253E%250A%250A%2520%2520%253Cul%2520className%253D%2522nav-links%2522%253E%250A%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522%252Fpage%2522%253EHOME%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522%252Fpage%2522%253EPRODUCTS%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522%252Fpage%2522%253EABOUT%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522%252Fpage%2522%253ELOGIN%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E%250A%2520%2520%253Cinput%2520className%253D%2522search%2522%2520placeholder%253D%2522Search%2522%252F%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fnav%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
   style={{width: "556px", height: "546px", border:"0", transform: "scale(1)", overflow:"hidden"}} title="code-snippet"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
-      
-       </div>
-
-
        <hr/>
 
 

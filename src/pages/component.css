@@ -25,6 +25,7 @@
 }
 .nav-component .items{
   display: flex;
+  width: 100%;
   justify-content: space-between;
   padding: 1rem;
   border-radius: 1rem;
@@ -32,14 +33,24 @@
   align-items: center;
 }
 
-.nav-links li{
-  display: inline-block;
+.nav-links li a{
+  display: flex;
+  justify-content: space-between;
   
 }
 .items input{
   border-radius: 1rem;
+  
   padding: 10px;
   width: 30%;
+}
+.black{
+  background-color: black;
+  border-radius: 15px;
+  color: white;
+}
+.black .nav-links li a{
+  color: white;
 }
 
 /* BUttons */
