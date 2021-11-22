@@ -351,13 +351,15 @@ border: 1px solid red;
 /* badge on card */
 .badge-container{ 
   position: relative;
+  text-align: center;
   margin: 2rem 2rem;
+  margin-left: 23rem;
   width: 30%;
 }
 .card-detail{
   display: flex;
   border: 1px solid black;
-  
+ 
   padding: 1rem;
   border-radius: 1rem;
   flex-direction: column;

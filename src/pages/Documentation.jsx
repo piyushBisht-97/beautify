@@ -12,12 +12,12 @@ const Documentation = () => {
              <ul className="nav-links">
                  <li><Linkr to="/">Home</Linkr></li>
                  <li><Linkr to="/docs">Docs</Linkr></li>
-                 <li><Linkr to="/about">About</Linkr></li>
+                 {/* <li><Linkr to="/about">About</Linkr></li> */}
              </ul>
 
             </div>
             
-        <a href="/page"><i className="fab fa-github fa-2x" ></i></a>
+        <a href="https://github.com/piyushBisht-97"><i className="fab fa-github fa-2x" ></i></a>
             
         </div>
        <main className="main">
@@ -212,12 +212,12 @@ const Documentation = () => {
   
   </main>
 
+  </div>
   <iframe
   src="https://carbon.now.sh/embed?bg=rgba%28248%2C5%2C155%2C1%29&t=solarized+light&wt=none&l=auto&ds=false&dsyoff=35px&dsblur=62px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=149%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520className%253D%2522badge-container%2522%253E%250A%253Ch2%253EBadge%2520on%2520Cards%253C%252Fh2%253E%250A%253Cmain%2520className%253D%2522card-detail%2522%253E%250A%2520%2520%250A%2520%2520%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fm.media-amazon.com%252Fimages%252FI%252F61nPiOOv9BL._SL1500_.jpg%2522%2520alt%253D%2522%2522%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520className%253D%2522text%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%253EApple%2520Iphone13%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253ERs%25201%252C00%252C000%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%253ECart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cspan%2520className%253D%2522badge%2522%253EComing%2520Soon%253C%252Fspan%253E%250A%2520%2520%250A%2520%2520%253C%252Fmain%253E%250A%2520%2520%253C%252Fdiv%253E"
   style={{width: "833px" , height: "506px" , border:"0" , transform: "scale(1)" , overflow:"hidden"}} title="code-snippet"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
-  </div>
   <hr/>
 
   <div className="component-details" id="avatar">
@@ -262,15 +262,7 @@ const Documentation = () => {
           >
             NavBar
           </Link>
-          <Link
-          activeClass="activeClass"
-            to="card"
-            spy={true}
-            smooth={true}
-            className="button-nav card-btn"
-          >
-            Cards{" "}
-          </Link>
+         
           <Link
             to="btn"
             activeClass="activeClass"
@@ -297,6 +289,15 @@ const Documentation = () => {
             className="button-nav alerts"
           >
             Alerts
+          </Link>
+          <Link
+          activeClass="activeClass"
+            to="card"
+            spy={true}
+            smooth={true}
+            className="button-nav card-btn"
+          >
+            Cards{" "}
           </Link>
           <Link
             to="card-detail"
